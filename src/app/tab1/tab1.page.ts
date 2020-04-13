@@ -7,6 +7,22 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  public rooms = [
+    { val: 'Wohnzimmer', isChecked: true },
+    { val: 'Küche', isChecked: false },
+    { val: 'Esszimmer', isChecked: false },
+    { val: 'Bad', isChecked: false },
+    { val: 'Kinderzimmer', isChecked: false },
+    { val: 'Arbeitszimmer', isChecked: false },
+    { val: 'Keller', isChecked: false }
+  ];
+
+  constructor() {
+
+  }
+
+  /* addRoom(){
+    this.rooms.push(val:'Dachboden', isChecked:true);
+  } */
 
 }
