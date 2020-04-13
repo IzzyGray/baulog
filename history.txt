@@ -1,0 +1,8 @@
+
+https://capacitor.ionicframework.com/docs/guides/ionic-framework-app/
+ionic start bauloggy tabs --capacitor
+
+Add platform:
+npx cap add android
+npx cap add ios
+npx cap add electron
