@@ -1,8 +1,44 @@
 
 https://capacitor.ionicframework.com/docs/guides/ionic-framework-app/
-ionic start bauloggy tabs --capacitor
 
+ionic start bauloggy tabs --capacitor
+? Framework: Angular
+
+npx cap init
+? App name bauloggy
+? App Package ID (in Java package format, no dashes) io.skysail.bauloggy
+
+ionic build
+npx cap add ios
+
+npm install @ionic/pwa-elements
+npx cap copy
+npx cap sync
+npx cap open ios
+
+ionic g service services/photo
+
+
+LIVE RELOAD
+
+https://ionicframework.com/docs/angular/your-first-app/7-live-reload
+ionic cap run ios -l --external
+
+----------------------command line infos-----------------------------------
 Add platform:
 npx cap add android
 npx cap add ios
 npx cap add electron
+
+Follow the Developer Workflow guide to get building:
+https://capacitor.ionicframework.com/docs/basics/workflow
+
+Your Ionic app is ready! Follow these next steps:
+- Go to your new project: cd ./bauloggy
+- Run ionic serve within the app directory to see your app in the browser
+- Run ionic capacitor add to add a native iOS or Android project using Capacitor
+- Generate your app icon and splash screens using cordova-res --skip-config --copy
+- Explore the Ionic docs for components, tutorials, and more: https://ion.link/docs
+- Building an enterprise app? Ionic has Enterprise Support and Features: https://ion.link/enterprise-edition
+
+Now you can run npx cap open ios to launch Xcode
